@@ -21,7 +21,7 @@ describe('Issue Deletion', () => {
     });
   
 // TEST CASE 2, issue deletion cancellation //
-    it.only('Should cancel issue deletion', () => {
+    it('Should cancel issue deletion', () => {
       getIssueDetailsModal().within(() => {
         cy.get('[data-testid="icon:trash"]').click();
       });
