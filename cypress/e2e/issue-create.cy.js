@@ -92,6 +92,8 @@ describe('Bug Issue create', () => {
       cy.get('[data-testid="select-option:Pickle Rick"]').click();
       cy.get('[data-testid="form-field:userIds"]').click();
       cy.get('[data-testid="select-option:Lord Gaben"]').click();
+      cy.get('[data-testid="select:priority"]').click();
+      cy.get('[data-testid="select-option:Highest"]').click();
       cy.get('button[type="submit"]').click();
     });
 
@@ -143,6 +145,8 @@ describe('Task Issue create', () => {
       cy.get('[data-testid="icon:task"]').should('be.visible');
       cy.get('[data-testid="select:reporterId"]').click();
       cy.get('[data-testid="select-option:Baby Yoda"]').click();
+      cy.get('[data-testid="select:priority"]').click();
+      cy.get('[data-testid="select-option:Low"]').click();
       cy.get('button[type="submit"]').click();
     });
 
