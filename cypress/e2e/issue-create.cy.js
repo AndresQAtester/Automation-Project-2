@@ -68,7 +68,7 @@ describe('Issue create', () => {
     });
   });
 });
-
+// TEST CASE 1, custom issue creation //
 describe('Bug Issue create', () => {
   beforeEach(() => {
     cy.visit('/');
@@ -118,7 +118,7 @@ describe('Bug Issue create', () => {
       });
   });
 });
-
+// TEST CASE 2, random data plugin issue creation //
 describe('Task Issue create', () => {
   beforeEach(() => {
     cy.visit('/');
