@@ -13,7 +13,7 @@ describe('Issue comments creating, editing and deleting', () => {
       const initialComment = 'TEST_COMMENT';
       const editedComment = 'TEST_COMMENT_EDITED';
 
-      // Create a comment
+      // CREATE A COMMENT
       getIssueDetailsModal().within(() => {
           cy.contains('Add a comment...')
               .click();
@@ -28,7 +28,7 @@ describe('Issue comments creating, editing and deleting', () => {
           cy.get('[data-testid="issue-comment"]').should('contain', initialComment);
       });
 
-      // Edit the comment
+      // EDIT THE COMMENT
       getIssueDetailsModal().within(() => {
           cy.get('[data-testid="issue-comment"]')
               .first()
@@ -49,7 +49,7 @@ describe('Issue comments creating, editing and deleting', () => {
               .and('contain', editedComment);
       });
 
-      // Delete the edited comment
+      // DELETE THE EDITED COMMENT
       getIssueDetailsModal()
           .find('[data-testid="issue-comment"]')
           .contains('Delete')
